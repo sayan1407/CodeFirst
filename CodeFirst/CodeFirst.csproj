@@ -86,6 +86,10 @@
     <Compile Include="Migrations\202301071200194_AddTagTable.designer.cs">
       <DependentUpon>202301071200194_AddTagTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301071416401_deleteandrepopulateGenreTable.cs" />
+    <Compile Include="Migrations\202301071416401_deleteandrepopulateGenreTable.designer.cs">
+      <DependentUpon>202301071416401_deleteandrepopulateGenreTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -117,6 +121,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301071200194_AddTagTable.resx">
       <DependentUpon>202301071200194_AddTagTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301071416401_deleteandrepopulateGenreTable.resx">
+      <DependentUpon>202301071416401_deleteandrepopulateGenreTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

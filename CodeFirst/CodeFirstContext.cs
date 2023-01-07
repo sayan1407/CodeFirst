@@ -10,6 +10,10 @@ namespace CodeFirst
 {
     public class CodeFirstContext : DbContext
     {
+        public CodeFirstContext()
+        {
+            this.Configuration.LazyLoadingEnabled = false;
+        }
         public DbSet<Video> Videos { get; set; }
         public DbSet<Genre> Genres { get; set; }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
