@@ -1,17 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CodeFirst.EntityConfiguration;
+
 namespace CodeFirst
 {
-
-    class Program
+    public class Tag
     {
-        static void Main(string[] args)
-        {
-        }
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public ICollection<Video> Videos { get; set; }
     }
 }

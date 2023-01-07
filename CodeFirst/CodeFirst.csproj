@@ -53,6 +53,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CodeFirstContext.cs" />
+    <Compile Include="EntityConfiguration\GenreConfiguration.cs" />
+    <Compile Include="EntityConfiguration\VideoConfiguration.cs" />
+    <Compile Include="Enum.cs" />
+    <Compile Include="Genre.cs" />
     <Compile Include="Migrations\202301041347539_CreateVideoAndGenreTable.cs" />
     <Compile Include="Migrations\202301041347539_CreateVideoAndGenreTable.designer.cs">
       <DependentUpon>202301041347539_CreateVideoAndGenreTable.cs</DependentUpon>
@@ -69,9 +74,23 @@
     <Compile Include="Migrations\202301041429097_AddClassificationColumninTableVideos.designer.cs">
       <DependentUpon>202301041429097_AddClassificationColumninTableVideos.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202301071057430_OverrideCodeFirstConvention.cs" />
+    <Compile Include="Migrations\202301071057430_OverrideCodeFirstConvention.designer.cs">
+      <DependentUpon>202301071057430_OverrideCodeFirstConvention.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301071121257_OverrideCodeFirstConventionToGenreTable.cs" />
+    <Compile Include="Migrations\202301071121257_OverrideCodeFirstConventionToGenreTable.designer.cs">
+      <DependentUpon>202301071121257_OverrideCodeFirstConventionToGenreTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202301071200194_AddTagTable.cs" />
+    <Compile Include="Migrations\202301071200194_AddTagTable.designer.cs">
+      <DependentUpon>202301071200194_AddTagTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Tag.cs" />
+    <Compile Include="Video.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -89,6 +108,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202301041429097_AddClassificationColumninTableVideos.resx">
       <DependentUpon>202301041429097_AddClassificationColumninTableVideos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301071057430_OverrideCodeFirstConvention.resx">
+      <DependentUpon>202301071057430_OverrideCodeFirstConvention.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301071121257_OverrideCodeFirstConventionToGenreTable.resx">
+      <DependentUpon>202301071121257_OverrideCodeFirstConventionToGenreTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202301071200194_AddTagTable.resx">
+      <DependentUpon>202301071200194_AddTagTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

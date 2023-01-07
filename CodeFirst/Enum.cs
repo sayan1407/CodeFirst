@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using CodeFirst.EntityConfiguration;
+
 namespace CodeFirst
 {
-
-    class Program
+    public enum Classification : byte
     {
-        static void Main(string[] args)
-        {
-        }
+        Gold = 1,
+        Silver = 2,
+        Platinum = 3
     }
+
 }
